@@ -1,0 +1,839 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/keeontology.owl#"
+     xml:base="http://www.semanticweb.org/keeontology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/keeontology.owl">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#hasEmployer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#hasEmployer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keeontology.owl#isEmployerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Employer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#hasLecturer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#hasLecturer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keeontology.owl#isLecturerOf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keeontology.owl#isLocationOf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#hasOwner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keeontology.owl#isOwnerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#hasSupervisor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#hasSupervisor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/keeontology.owl#isSupervisorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#isEmployerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#isEmployerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Employer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#isLecturerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#isLecturerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#isLocationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#isLocationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#isOwnerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#isOwnerOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#isSupervisorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/keeontology.owl#isSupervisorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#AcademicStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#AcademicStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#AdministrativeStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#AdministrativeStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Agreeableness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Agreeableness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Appointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Appointment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Schedule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#AttendEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#AttendEvent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#BreakLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#BreakLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Campus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Cafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Cafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#BreakLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Campus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Campus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Canteen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Canteen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Building"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#FoodLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#CleanUp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#CleanUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Cold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Cold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#LightSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Comfort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Comfort"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#CommanRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#CommanRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeontology.owl#PrivateRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#ConferenceRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#ConferenceRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#ConferenceVenue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#ConferenceVenue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Conscientiousness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Conscientiousness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Cool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Cool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Doctorand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Doctorand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#AcademicStaff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/keeontology.owl#PostDoctorand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#DoorSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#DoorSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#HaveBreak"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Eat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Eat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#HaveBreak"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Employer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Employer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Extraversion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Extraversion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#FoodLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#FoodLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#BreakLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#GiveLecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#GiveLecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Happy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Happy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#HardwareLab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#HardwareLab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#HaveBreak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#HaveBreak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#HaveMeeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#HaveMeeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#HaveTelco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#HaveTelco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Home -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Home">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Hot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Hot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#HumiditySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Intensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Intensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#LightSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Kitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Kitchen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#LabLeader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#LabLeader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#LectureHall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#LectureHall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#LightSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#LightSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#LivingLab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#LivingLab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#MentalState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#MotionSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#MotionSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Neuroticism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Neuroticism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Neutral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Neutral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#NoiseSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#NoiseSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Openness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Openness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Personality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Personality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#PostDoctorand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#PostDoctorand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#AcademicStaff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#PrivateRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#PrivateRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Room"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/keeontology.owl#hasOwner"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Employer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#RecurringAppointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#RecurringAppointment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Appointment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Relaxed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Relaxed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Room -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Office"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Schedule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Schedule"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Secretariat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Secretariat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#SeminarRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#SeminarRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#ServerRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#ServerRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#SlightlyCool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#SlightlyCool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#SlightlyWarm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#SlightlyWarm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#SocialInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#SocialInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Stressed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Stressed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#StudentRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#StudentRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#StudentStaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#StudentStaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#ThermalComfort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#ThermalComfort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Comfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Tired -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Tired">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Toilet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Toilet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#CommanRoom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Warm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Warm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#ThermalComfort"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/keeontology.owl#WorkAtComputer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/keeontology.owl#WorkAtComputer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/keeontology.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Activity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Comfort"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#MentalState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Personality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Schedule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#AttendEvent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#CleanUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Drink"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Eat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#GiveLecture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#HaveBreak"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#HaveMeeting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Work"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Cafe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#ConferenceVenue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Home"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#University"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Cold"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Cool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Hot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Neutral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#SlightlyCool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#SlightlyWarm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Warm"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#ConferenceRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#HardwareLab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Kitchen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#LivingLab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Secretariat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#SeminarRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#ServerRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#StudentRoom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/keeontology.owl#Toilet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
